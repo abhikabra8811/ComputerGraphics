@@ -1,0 +1,69 @@
+[ Abhishek Kabra]
+ITCS 6120 - Project 3
+
+=============================================================================
+This is a template description file.  Please fill in by replacing the []'s
+with relevant content (write a *single* sentence description for each method,
+bug, extension, etc...).  Then, remove any leftover []'s.
+=============================================================================
+
+Incomplete parts:
+-----------------
+  -
+
+Bugs in code:
+-------------
+  - 
+
+Extensions/extra credit completed:
+----------------------------------
+  - Bug Cam
+  - Baby bugs added
+  - Predator bug
+
+================================================================
+
+Methods completed or changed
+----------------------------
+
+Bug.java
+  - keyframe()
+  frame is computed using interpolation of two nearest keyframe frames
+  - transform()
+  rotation about Z axis added to point bug in direction of acceleration
+  - draw()
+  changed color of the bug is bug is a predator bug
+  
+Critter.java
+  - integrate()
+  Implemented Eulers integration 
+  
+  - accelDrag()
+  Viscous drag added based k and velocity
+  
+  - accelAttract()
+  Acceleration computed using k and distance from goal or obstacle
+
+Rock.java
+ - compute()
+	call to computeFractal
+ - computeFractal()
+	fractal rock is computed using recursion
+ - performDiamondStep()
+	diamond step of diamond and square algorithm
+ - performSquareStep()
+	square step of diamond and square algorithm
+
+Scene.java
+ - build()
+	rocks, tree, main bug, baby bugs, predator bug created
+ - process()
+	scene is processed based on acceleration and repulsion on objects in scene
+
+TreePart.java
+  - TreePart()
+  recursively created Tree
+  - draw()
+  Transformations for tree and leaf
+
+[ ... add any other methods you create under the right file... ]

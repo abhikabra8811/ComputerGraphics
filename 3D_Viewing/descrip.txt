@@ -1,0 +1,57 @@
+Abhishek Kabra
+ITCS 428 6120 - Project 1
+
+=============================================================================
+This is a template description file.  Please fill in by replacing the []'s
+with relevant content (write a *single* sentence description for each method,
+bug, extension, etc...).  Then, remove any leftover []'s.
+=============================================================================
+
+Incomplete parts:
+-----------------
+  - none
+
+Bugs in code:
+-------------
+  - None
+
+Extensions/extra credit completed:
+----------------------------------
+  - [ Drawing cube in wireframe using special property of clipping planes ]
+
+================================================================
+
+Methods completed or changed:
+-----------------------------
+
+Cube.java:
+- transform()
+  push modeling transformation M on the stack
+
+CameraView.java:
+- projection()
+	Managed aspect ratio, projection matrix is set using glFrustrum or glOrtho depending on user selection.
+- draw()
+	Cube in drawn in camera view using VM transformation
+- transformation()
+	pushed camera transformation on stack for GL_MODELVIEW mode
+- inverseTransformation(): Perfomed inverse transformation for Camera view which is used in World view
+
+WorldView.java:
+- projection()
+	glFrustrum is used to set perspective projection mode
+- draw()
+	Camera view volume is drawn --> Placed and enabled clipping planes --> cube is drawn --> disabled clipping planes --> placed the clipping by changing the direction of normal --> Cube in wireframe is drawn enabling clipping planes one by one
+	
+- transformation()
+	pushed camera transformation on stack for GL_MODELVIEW mode
+
+ViewVolume.java:
+- draw()
+	camera view volume is drawn using near and far planes
+- placeClipPlanes()
+	placeClipPlane is called 6 times for 6 planes of view volume
+- placeClipPlane()
+	vectors P1P3 and P1P2 are created --> P1P3 x P1P2 gives norm vector --> equation of plane is computed
+
+[ ... add any other methods you create under the appropriate file... ]
