@@ -2,7 +2,7 @@
  * The OpenGL drawing component of the interface
  * for the "camera" viewport
  *
- * CS 428   Doug DeCarlo
+ * ITCS 6120 Abhishek Kabra
  */
 
 import java.awt.*;
