@@ -1,14 +1,3 @@
-/* class BooleanParameter
- * Class for holding a boolean value that is kept in sync 
- * with the user interface (perhaps in multiple locations, such
- * as in both a checkbox or a menu checkbox)
- * 
- * First, create an instance of this class.  Then, upon the creation
- * of each interface component, register() it.
- *
- * Doug DeCarlo
- */
-
 import java.util.*;
 import java.text.*;
 import java.awt.*;
