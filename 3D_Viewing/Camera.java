@@ -1,9 +1,3 @@
-/* class Camera
- * Camera parameters (static storage)
- *
- * Doug DeCarlo
- */
-
 class Camera
 {
     private static DoubleParameter tx, ty, tz, roll, pitch, yaw, near, far;
