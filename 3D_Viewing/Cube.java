@@ -1,10 +1,3 @@
-/* class Cube
- * OpenGL methods for drawing a cube (wireframe or polygons); the cube
- * should be drawn in object coordinates (specified by Obj)
- *
- * CS 428   Doug DeCarlo
- */
-
 import javax.media.opengl.*;
 
 import jdk.nashorn.internal.objects.Global;
